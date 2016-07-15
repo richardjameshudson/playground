@@ -1,0 +1,22 @@
+﻿{
+  "version": "1.0.0.14",
+  "authors": [ "Richard Hudson" ],
+  "dependencies": {
+    "Microsoft.AspNetCore.Mvc": "1.0.0",
+    "Microsoft.AspNetCore.Razor": "1.0.0"
+  },
+  "description": "Tile Example",
+  "frameworks": {
+    "net462": {}
+  },
+  "buildOptions": {
+    "embed": [
+      "Views/**",
+      "css/**" 
+    ] },
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --output c:\\nupkg --no-build --configuration %compile:Configuration%"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+﻿
+@section Aside {
+
+    
+
+}
+
+@section Main {
+    <div class="row"><br /></div>
+<div class="row">
+    <bootstrap-panel title="With Taghelper for Bootstrap" type="@PanelTagHelper.PanelType.Success">
+        @await Component.InvokeAsync("TestWebSite.Components.UI.Tile", new { config = "{ \"ContainerTitle\":\"\", \"Tiles\":[{\"TileImage\":\"http://fillmurray.com/100/100\",\"TileText\":\"Good Ol' Billy\"}]}" })
+    </bootstrap-panel>
+    <bootstrap-panel title="With Taghelper for Bootstrap" type="@PanelTagHelper.PanelType.Danger">
+        @await Component.InvokeAsync("TestWebSite.Components.UI.Tile", new { config = "{ \"ContainerTitle\":\"Make a different change\", \"Tiles\":[{\"TileImage\":\"http://www.stevensegallery.com/100/100\",\"TileText\":\"Who's that?\"},{\"TileImage\":\"http://www.placecage.com/100/100\",\"TileText\":\"He's an actor?\"}]}" })
+        @await Component.InvokeAsync("TestWebSite.Components.UI.Tile", new { config = "{ \"ContainerTitle\":\"Make a different change\", \"Tiles\":[{\"TileImage\":\"http://www.placecage.com/100/100\",\"TileText\":\"He's an actor?\"},{\"TileImage\":\"http://www.stevensegallery.com/100/100\",\"TileText\":\"Who's that?\"}]}" })
+    </bootstrap-panel>
+
+</div>
+<div class="row">
+
+    @await Component.InvokeAsync("TestWebSite.Components.UI.Tile", new { config = "{ \"ContainerTitle\":\"\", \"Tiles\":[{\"TileImage\":\"http://fillmurray.com/100/100\",\"TileText\":\"Good Ol' Billy\"}]}" })
+</div>
+<div class="row">
+    @await Component.InvokeAsync("TestWebSite.Components.UI.Tile", new { config = "{ \"ContainerTitle\":\"Make a change\", \"Tiles\":[{\"TileImage\":\"http://fillmurray.com/100/100\",\"TileText\":\"Good Ol' Billy\"}]}" })
+</div>
+<div class="row">
+    @await Component.InvokeAsync("TestWebSite.Components.UI.Tile", new { config = "{ \"ContainerTitle\":\"Make a different change\", \"Tiles\":[{\"TileImage\":\"http://fillmurray.com/100/100\",\"TileText\":\"Good Ol' Billy\"},{\"TileImage\":\"http://www.stevensegallery.com/100/100\",\"TileText\":\"Who's that?\"},{\"TileImage\":\"http://www.placecage.com/100/100\",\"TileText\":\"He's an actor?\"}]}" })
+</div>
+
+
+
+
+}
+
+@section Footer {
+    <footer>
+        <p>&copy; 2016 - TestWebSite</p>
+    </footer>
+}
+

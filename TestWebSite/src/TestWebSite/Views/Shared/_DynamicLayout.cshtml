@@ -1,0 +1,56 @@
+﻿@*@inject AppTenant Tenant;*@
+<!DOCTYPE html>
+<html>
+<head>
+    @await Component.InvokeAsync("TestWebSite.Components.UI.HtmlHead", new { title = "My Site Title", stylefile = "/Component.Tile/css/Tile.css" })
+
+</head>
+<body>
+    
+
+
+
+    <div class="container body-content">
+        <div class="row">
+            @await Component.InvokeAsync("TestWebSite.Components.UI.Navigation", new { navItems = "{ \"NavigationItems\":[{ \"Controller\":\"Home\",\"Action\":\"Index\",\"Name\":\"Home\"},{ \"Controller\":\"Home\",\"Action\":\"About\",\"Name\":\"About\"},{ \"Controller\":\"Home\",\"Action\":\"Contact\",\"Name\":\"Contact\"}]}" })
+                @RenderSection("Header", false)
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                @RenderSection("Aside", false)
+            </div>
+            <div class="col-xs-10">
+                @RenderSection("Main", false)
+            </div>
+        </div>
+        <div class="row">@RenderSection("Footer", false)</div>
+
+            
+            
+            
+        <div style="display: none;">
+            @RenderBody()
+        </div>
+            
+    </div>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

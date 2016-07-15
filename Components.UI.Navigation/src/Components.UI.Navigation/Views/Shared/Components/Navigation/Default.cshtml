@@ -1,0 +1,28 @@
+﻿@model TestWebSite.Components.UI.NavigationModel
+@using Newtonsoft.Json
+
+<div style="display:none;">
+    @JsonConvert.SerializeObject(Model)
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">TestWebSite</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                @foreach (var navItem in Model.NavigationItems)
+                {
+                    <li><a asp-area="" asp-controller="@navItem.Controller" asp-action="@navItem.Action">@navItem.Name</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
