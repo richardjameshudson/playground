@@ -15,6 +15,9 @@ namespace TestWebSite.Components.UI.Bootstrap
         [HtmlAttributeName("title")]
         public string Title { get; set; }
 
+        [HtmlAttributeName("subtitle")]
+        public string SubTitle { get; set; }
+
         [HtmlAttributeName("type")]
         public PanelType Type { get; set; }
 
@@ -34,6 +37,7 @@ namespace TestWebSite.Components.UI.Bootstrap
             var sb = new StringBuilder();
             sb.AppendLine(@"<div class=""panel-heading"">");
             sb.AppendLine(string.Format(@"<h3 class=""panel-title"">{0}</h3>", Title));
+            sb.AppendLine(string.Format(@"<h5 class=""panel-title"">{0}</h5>", SubTitle));
             sb.AppendLine(@"</div>");
             sb.AppendLine(@"<div class=""panel-body"">");
             output.PreContent.SetHtmlContent(sb.ToString());

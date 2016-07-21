@@ -16,7 +16,7 @@
           "lib/net452/dotnet-bundle.exe": {}
         }
       },
-      "Components.UI.Bootstrap/1.0.0.9": {
+      "Components.UI.Bootstrap/1.0.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": "1.0.0",
@@ -68,10 +68,13 @@
           "lib/net462/Components.UI.Navigation.dll": {}
         }
       },
-      "Components.UI.Tile/1.0.0.14": {
+      "Components.UI.Tile/1.0.0.24": {
         "type": "package",
         "dependencies": {
+          "Data.Person": "1.0.0.1",
+          "Microsoft.AspNetCore.Diagnostics": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor": "1.0.0",
           "Microsoft.AspNetCore.Razor": "1.0.0"
         },
         "compile": {
@@ -79,6 +82,15 @@
         },
         "runtime": {
           "lib/net462/Components.UI.Tile.dll": {}
+        }
+      },
+      "Data.Person/1.0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Data.Person.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Data.Person.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -2228,12 +2240,12 @@
         "lib/netcoreapp1.0/dotnet-bundle.runtimeconfig.json"
       ]
     },
-    "Components.UI.Bootstrap/1.0.0.9": {
-      "sha512": "4A3uRFFmISutUgZESFhi4Yrf5Ns8qeGL2IHfgRAaLKhRDJHwu9ZHg/QL6KwE8a4p4R6sUxleQU107lDWPIJdDA==",
+    "Components.UI.Bootstrap/1.0.0.10": {
+      "sha512": "PUs7CNaYC4A74NLRT6QRDyRGe8xWP6ezjV1qX9nfL9LmoMqYXp8A+hnRtsEHR3k1/EXHtkGysjg02A64uAueNg==",
       "type": "package",
-      "path": "Components.UI.Bootstrap/1.0.0.9",
+      "path": "Components.UI.Bootstrap/1.0.0.10",
       "files": [
-        "Components.UI.Bootstrap.1.0.0.9.nupkg.sha512",
+        "Components.UI.Bootstrap.1.0.0.10.nupkg.sha512",
         "Components.UI.Bootstrap.nuspec",
         "lib/net462/Components.UI.Bootstrap.dll"
       ]
@@ -2268,14 +2280,24 @@
         "lib/net462/Components.UI.Navigation.dll"
       ]
     },
-    "Components.UI.Tile/1.0.0.14": {
-      "sha512": "H8Combbu990AUwSZDOJpZ6wGN7LZ595uZYnzs5Fg6Q9pX4wDEH62StpCiUNZgSByrwQr3ZdLfOO1Dp+7+/R0SA==",
+    "Components.UI.Tile/1.0.0.24": {
+      "sha512": "oy4Mh/hSj8bI8i9c8kEzKQIBMFox030Wyw0k9Ho4N1Pu8ofovKd4M99DacplsbLdkuCRzRGro4v21Ikf3k74Cg==",
       "type": "package",
-      "path": "Components.UI.Tile/1.0.0.14",
+      "path": "Components.UI.Tile/1.0.0.24",
       "files": [
-        "Components.UI.Tile.1.0.0.14.nupkg.sha512",
+        "Components.UI.Tile.1.0.0.24.nupkg.sha512",
         "Components.UI.Tile.nuspec",
         "lib/net462/Components.UI.Tile.dll"
+      ]
+    },
+    "Data.Person/1.0.0.2": {
+      "sha512": "YNnuCqCDUXOmyUZnR0v0SNaZ0if/d1CixwXpq39YUZNKu+yL11COZhfyV3YwkLNF3ZNYJz2kUgrnk8wsxgPFBw==",
+      "type": "package",
+      "path": "Data.Person/1.0.0.2",
+      "files": [
+        "Data.Person.1.0.0.2.nupkg.sha512",
+        "Data.Person.nuspec",
+        "lib/net462/Data.Person.dll"
       ]
     },
     "Libuv/1.9.0": {
@@ -6755,11 +6777,12 @@
   "projectFileDependencyGroups": {
     "": [
       "BundlerMinifier.Core >= 2.1.258",
-      "Components.UI.Bootstrap >= 1.0.0.9",
+      "Components.UI.Bootstrap >= 1.0.0.10",
       "Components.UI.HtmlHead >= 1.0.0.12",
       "Components.UI.Layout >= 1.0.0.3",
       "Components.UI.Navigation >= 1.0.0.10",
-      "Components.UI.Tile >= 1.0.0.14",
+      "Components.UI.Tile >= 1.0.0.24",
+      "Data.Person >= 1.0.0.2",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor >= 1.0.0",

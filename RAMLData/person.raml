@@ -1,0 +1,22 @@
+#%RAML 0.8
+title: BGL Person API
+version: "1.0.0"
+baseUri: "https://bglgroup.co.uk:443/api/v1"
+mediaType: application/json
+
+/person:
+  /1234:
+    displayName: Api represneting a selection
+    get:
+      description: Get the person record
+      body:
+        application/json:
+           schema: !include json/schemas/person-schema.json
+      responses:
+        "200":
+         description: Success
+         body:
+          "application/json":
+           example: !include json/examples/person-response.json 
+
+    

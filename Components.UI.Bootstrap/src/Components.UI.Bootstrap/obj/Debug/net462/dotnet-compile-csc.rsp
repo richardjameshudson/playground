@@ -8,8 +8,8 @@
 -debug:full
 -nostdlib
 -nologo
-"c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\obj\Debug\net462\dotnet-compile.assemblyinfo.cs"
--out:"c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\bin\Debug\net462\Components.UI.Bootstrap.dll"
+"C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\obj\Debug\net462\dotnet-compile.assemblyinfo.cs"
+-out:"C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\bin\Debug\net462\Components.UI.Bootstrap.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\net451\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\net451\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\net451\Microsoft.AspNetCore.Cors.dll"
@@ -121,5 +121,5 @@
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Reflection.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.ComponentModel.Composition.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Runtime.Serialization.dll"
-"c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\PanelTagHelper.cs"
-"c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\Properties\AssemblyInfo.cs"
+"C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\PanelTagHelper.cs"
+"C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\Properties\AssemblyInfo.cs"

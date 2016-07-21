@@ -1,5 +1,5 @@
---temp-output:c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\obj\Debug\net462\
---out:c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\bin\Debug\net462\Components.UI.Bootstrap.dll
+--temp-output:C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\obj\Debug\net462\
+--out:C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\bin\Debug\net462\Components.UI.Bootstrap.dll
 --define:DEBUG
 --define:TRACE
 --define:NET462
@@ -9,9 +9,9 @@
 --optimize:False
 --output-name:Components.UI.Bootstrap
 --description:Bootstrap TagHelper
---file-version:1.0.0.9
---version:1.0.0.9
---informational-version:1.0.0.9
+--file-version:1.0.0.10
+--version:1.0.0.10
+--informational-version:1.0.0.10
 --target-framework:.NETFramework,Version=v4.6.2
 --reference:C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\net451\Microsoft.AspNetCore.Antiforgery.dll
 --reference:C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\net451\Microsoft.AspNetCore.Authorization.dll
@@ -124,5 +124,5 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Reflection.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.ComponentModel.Composition.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Runtime.Serialization.dll
-c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\PanelTagHelper.cs
-c:\ProjectsGIT\Examples\Components.UI.Bootstrap\src\Components.UI.Bootstrap\Properties\AssemblyInfo.cs
+C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\PanelTagHelper.cs
+C:\ProjectsGIT\playground\Components.UI.Bootstrap\src\Components.UI.Bootstrap\Properties\AssemblyInfo.cs

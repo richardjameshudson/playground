@@ -8,14 +8,15 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\ProjectsGIT\Playground\TestWebSite\src\TestWebSite\obj\Debug\net462\dotnet-compile.assemblyinfo.cs"
--out:"C:\ProjectsGIT\Playground\TestWebSite\src\TestWebSite\bin\Debug\net462\TestWebSite.exe"
+"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\obj\Debug\net462\dotnet-compile.assemblyinfo.cs"
+-out:"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\bin\Debug\net462\TestWebSite.exe"
 -r:"C:\Users\rhudson\.nuget\packages\BundlerMinifier.Core\2.1.258\lib\net452\dotnet-bundle.exe"
--r:"C:\Users\rhudson\.nuget\packages\Components.UI.Bootstrap\1.0.0.9\lib\net462\Components.UI.Bootstrap.dll"
+-r:"C:\Users\rhudson\.nuget\packages\Components.UI.Bootstrap\1.0.0.10\lib\net462\Components.UI.Bootstrap.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Components.UI.HtmlHead\1.0.0.12\lib\net462\Components.UI.HtmlHead.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Components.UI.Layout\1.0.0.3\lib\net462\Components.UI.Layout.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Components.UI.Navigation\1.0.0.10\lib\net462\Components.UI.Navigation.dll"
--r:"C:\Users\rhudson\.nuget\packages\Components.UI.Tile\1.0.0.14\lib\net462\Components.UI.Tile.dll"
+-r:"C:\Users\rhudson\.nuget\packages\Components.UI.Tile\1.0.0.24\lib\net462\Components.UI.Tile.dll"
+-r:"C:\Users\rhudson\.nuget\packages\Data.Person\1.0.0.2\lib\net462\Data.Person.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\net451\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\net451\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\net451\Microsoft.AspNetCore.Cors.dll"
@@ -163,7 +164,9 @@
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Reflection.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.ComponentModel.Composition.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Runtime.Serialization.dll"
--resource:"C:\ProjectsGIT\Playground\TestWebSite\src\TestWebSite\obj\Debug\net462\TestWebSitedotnet-compile.deps.json",TestWebSite.deps.json
-"C:\ProjectsGIT\Playground\TestWebSite\src\TestWebSite\Program.cs"
-"C:\ProjectsGIT\Playground\TestWebSite\src\TestWebSite\Startup.cs"
-"C:\ProjectsGIT\Playground\TestWebSite\src\TestWebSite\Controllers\HomeController.cs"
+-resource:"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\obj\Debug\net462\TestWebSitedotnet-compile.deps.json",TestWebSite.deps.json
+"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\Program.cs"
+"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\Startup.cs"
+"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\Controllers\HomeController.cs"
+"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\Extensions\ThemeEngine.cs"
+"C:\ProjectsGIT\playground\TestWebSite\src\TestWebSite\Extensions\ViewComponentTagHelper.cs"

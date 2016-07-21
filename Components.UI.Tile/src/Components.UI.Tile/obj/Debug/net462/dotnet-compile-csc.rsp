@@ -8,14 +8,16 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\obj\Debug\net462\dotnet-compile.assemblyinfo.cs"
--out:"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\bin\Debug\net462\Components.UI.Tile.dll"
+"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\obj\Debug\net462\dotnet-compile.assemblyinfo.cs"
+-out:"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\bin\Debug\net462\Components.UI.Tile.dll"
+-r:"C:\Users\rhudson\.nuget\packages\Data.Person\1.0.0.1\lib\net462\Data.Person.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\net451\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\net451\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\net451\Microsoft.AspNetCore.Cors.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Cryptography.Internal\1.0.0\lib\net451\Microsoft.AspNetCore.Cryptography.Internal.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.DataProtection\1.0.0\lib\net451\Microsoft.AspNetCore.DataProtection.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.DataProtection.Abstractions\1.0.0\lib\net451\Microsoft.AspNetCore.DataProtection.Abstractions.dll"
+-r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Diagnostics\1.0.0\lib\net451\Microsoft.AspNetCore.Diagnostics.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Diagnostics.Abstractions\1.0.0\lib\netstandard1.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.0.0\lib\net451\Microsoft.AspNetCore.Hosting.Abstractions.dll"
 -r:"C:\Users\rhudson\.nuget\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions\1.0.0\lib\net451\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
@@ -121,10 +123,10 @@
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Reflection.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.ComponentModel.Composition.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Runtime.Serialization.dll"
--resource:"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\css\Tile.css",Components.UI.Tile.css.Tile.css
--resource:"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\Views\Shared\Components\Tile\Default.cshtml",Components.UI.Tile.Views.Shared.Components.Tile.Default.cshtml
-"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\Tile.cs"
-"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\Models\TileItem.cs"
-"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\Models\TileModel.cs"
-"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\Models\TileModelBuilder.cs"
-"C:\ProjectsGIT\Examples\Components.UI.Tile\src\Components.UI.Tile\Properties\AssemblyInfo.cs"
+-resource:"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\css\Tile.css",Components.UI.Tile.css.Tile.css
+-resource:"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\Views\Shared\Components\Tile\Default.cshtml",Components.UI.Tile.Views.Shared.Components.Tile.Default.cshtml
+"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\Tile.cs"
+"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\Models\TileItem.cs"
+"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\Models\TileModel.cs"
+"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\Models\TileModelBuilder.cs"
+"C:\ProjectsGIT\playground\Components.UI.Tile\src\Components.UI.Tile\Properties\AssemblyInfo.cs"

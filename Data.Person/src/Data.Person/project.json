@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.0.0.2",
+  "authors": [ "Richard Hudson" ],
+  "description": "Data Person",
+  "frameworks": {
+    "net462": {}
+  },
+  "buildOptions": {
+    "embed": []
+  },
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --output c:\\nupkg --no-build --configuration %compile:Configuration%"
+    ]
+  }
+}

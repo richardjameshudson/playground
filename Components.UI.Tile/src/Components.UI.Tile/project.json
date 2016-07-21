@@ -1,8 +1,11 @@
 ﻿{
-  "version": "1.0.0.14",
+  "version": "1.0.0.24",
   "authors": [ "Richard Hudson" ],
   "dependencies": {
+    "Data.Person": "1.0.0.1",
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
+    "Microsoft.AspNetCore.Mvc.Razor": "1.0.0",
     "Microsoft.AspNetCore.Razor": "1.0.0"
   },
   "description": "Tile Example",

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Data;
 
 namespace TestWebSite.Components.UI
 {
@@ -15,15 +16,20 @@ namespace TestWebSite.Components.UI
             _tileModel = new TileModel();
         }
 
-        public TileModelBuilder(string jsonConfig) {
-            if (!string.IsNullOrEmpty(jsonConfig))
+        public TileModelBuilder(IPerson person)
+        {
+            _tileModel = new UI.TileModel();
+            var tiles = new List<TileItem>();
+            foreach(var item in person.GetPersons())
             {
-                _tileModel = Newtonsoft.Json.JsonConvert.DeserializeObject<TileModel>(jsonConfig);
+                tiles.Add(new TileItem()
+                {
+                    TileImage = item.ProfileImage,
+                    TileText = item.FirstName + " " + item.LastName
+                });
             }
-            else
-            {
-                _tileModel = new TileModel();
-            }
+            _tileModel.Tiles = tiles;
+
         }
         
         public TileModel GetInstance()

@@ -7,7 +7,6 @@ using System.Reflection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Http;
-using System;
 
 namespace TestWebSite
 {
@@ -37,7 +36,13 @@ namespace TestWebSite
                 x.FileProviders.Add(new EmbeddedFileProvider(typeof(Components.UI.Tile).GetTypeInfo().Assembly));
                 x.FileProviders.Add(new EmbeddedFileProvider(typeof(Components.UI.Layout).GetTypeInfo().Assembly));
                 x.FileProviders.Add(new EmbeddedFileProvider(typeof(Components.UI.Navigation).GetTypeInfo().Assembly));
+                x.ViewLocationExpanders.Add(new ThemeEngine());
             });
+
+            
+            //Get Data Services
+            services.AddTransient<Data.IPerson, Data.Person>();
+            
 
         }
 

@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0.0.9",
+  "version": "1.0.0.10",
   "authors": [ "Richard Hudson" ],
   "dependencies": {
     "Microsoft.AspNetCore.Mvc": "1.0.0",

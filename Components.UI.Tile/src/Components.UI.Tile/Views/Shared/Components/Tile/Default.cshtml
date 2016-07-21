@@ -1,27 +1,15 @@
 ﻿@model TestWebSite.Components.UI.TileModel
-@if (!Model.IsSingleTileView) { 
-    @:<div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">@Model.ContainerTitle</h3>
-        </div>
-        @:<div class="panel-body">
-}
 
-            @foreach (var item in Model.Tiles)
-            {
-                <div class="tile-container">
-                <h2 class="tile-header">@item.TileText</h2>
-                <div class="tile-img">
-                    <figure>
-                        <img src="@item.TileImage" height="100" width="100" />
-                        <figcaption aria-hidden="true">Billy Murray</figcaption>
-                    </figure>
-                </div>
-            </div>
-            }
-
-@if (!Model.IsSingleTileView)
+@foreach (var item in Model.Tiles)
 {
-       @:</div>
-    @:</div>
+    <div class="tile-container">
+    <h2 class="tile-header">@item.TileText</h2>
+    <div class="tile-img">
+        <figure>
+            <img src="@item.TileImage" height="100" width="100" />
+            <figcaption aria-hidden="true">@item.TileText</figcaption>
+        </figure>
+    </div>
+</div>
 }
+

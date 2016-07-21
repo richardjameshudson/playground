@@ -1,0 +1,32 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "Comment describing your JSON Schema",
+	"properties": {
+		"personid": {
+			"type": "string"
+		},
+		"firstname": {
+			"type": "string"
+		},
+		"lastname": {
+			"type": "string",
+			"enum": [
+				"PM",
+				"AM"
+			]
+		},
+		"dateofbirth":{
+			"type": "date"	
+		},
+		"profileimage": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"personid",
+		"firstname",
+		"lastname",
+		"dateofbirth",
+		"profileimage"
+	]
+}
