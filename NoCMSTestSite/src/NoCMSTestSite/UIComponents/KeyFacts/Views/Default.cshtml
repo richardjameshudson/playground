@@ -1,0 +1,17 @@
+﻿@model NoCMSTestSite.UIComponents.Models.KeyFactsModel
+<div class="panel panel-info">
+    <div class="panel-heading">My policy key facts</div><div class="panel-body">
+            @foreach (var item in Model.Items)
+            {
+                <div class="tile-container">
+                    <h4 class="tile-header">@item.Title</h4>
+                    <div class="tile-img">
+                        <figure>
+                            <img src="@item.Icon" />
+                            <figcaption aria-hidden="true">@item.Title</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>

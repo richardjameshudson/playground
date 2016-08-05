@@ -1,0 +1,17 @@
+﻿@model NoCMSTestSite.UIComponents.Models.SoYourAStarModel
+<div class="panel panel-danger">
+        <div class="panel-heading">Your A Star?</div><div class="panel-body">
+            @foreach (var item in Model.Items)
+            {
+                <div class="tile-container">
+                    <h2 class="tile-header">@item.Name</h2>
+                    <div class="tile-img">
+                        <figure>
+                            <img src="@item.Image" height="100" width="100" />
+                            <figcaption aria-hidden="true">@item.Name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>

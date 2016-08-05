@@ -1,0 +1,21 @@
+﻿            .tile-container {
+              position: relative;
+              display:block;
+              float:left;
+              text-align: center;
+              padding:20px;
+              width: 30%;
+              border:2px solid #ccc;
+              margin:5px;
+              overflow: hidden;
+            }
+            .tile-header{
+                margin:0 0 20px 0;
+                padding:0;
+            }
+            .tile-img figure {
+                margin:0;
+            }
+            .tile-img figcaption {
+                display:none;
+            }
