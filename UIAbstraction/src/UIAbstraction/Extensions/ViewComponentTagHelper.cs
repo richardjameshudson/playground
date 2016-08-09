@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using UIAbstraction.Data;
 
 namespace UIAbstraction.Extensions
 { 
@@ -13,10 +14,14 @@ namespace UIAbstraction.Extensions
     {
         private IViewComponentHelper _viewComponentHelper;
         private string _componentName;
+        
+
         public object Model { get; set; }
 
         [HtmlAttributeName("model-source")]
         public string ModelSource { get; set; }
+
+
 
         [ViewContext]
         public ViewContext ViewContext { get; set; }
@@ -30,9 +35,10 @@ namespace UIAbstraction.Extensions
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
+            
             output.TagName = null;
             ((IViewContextAware)_viewComponentHelper).Contextualize(ViewContext);
-            var viewContent = await Task.Run(() => _viewComponentHelper.InvokeAsync(_componentName, Model));
+            var viewContent = await _viewComponentHelper.InvokeAsync(_componentName, new {model = Model});
             output.Content.SetHtmlContent(viewContent);
         }
 

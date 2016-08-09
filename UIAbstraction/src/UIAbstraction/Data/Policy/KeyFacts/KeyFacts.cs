@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UIAbstraction.Data;
 using UIAbstraction.UI.Components.Models;
 
 namespace UIAbstraction.Data.Policy
@@ -26,10 +27,10 @@ namespace UIAbstraction.Data.Policy
             };
         }
 
-        public UI.Components.Models.PanelWithTilesModel GetData()
+        public PanelWithTilesModel GetModel()
         {
             return _model;
         }
-        
+
     }
 }

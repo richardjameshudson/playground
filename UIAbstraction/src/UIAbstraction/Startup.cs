@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using UIAbstraction.Data;
 
 namespace UIAbstraction
 {
@@ -27,6 +28,8 @@ namespace UIAbstraction
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddTransient<IPanelWithTilesModelFactory, PanelWithTilesModelFactory>();
             // Add framework services.
             services.AddMvc();
         }

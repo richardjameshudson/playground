@@ -1,13 +1,6 @@
 ﻿@addTagHelper "*, UIAbstraction"
 
-
-<uicollection.panel title="Title" class="panel-danger">
-    <uicollection.tile title="TileTitle" image-source="http://fillmurray.com/100/100" image-caption=Bill Murray"/>
-</uicollection.panel>
-
-
-
-@*@model UIAbstraction.UI.Components.Models.PanelWithTilesModel
+@model UIAbstraction.UI.Components.Models.PanelWithTilesModel
 
 <uicollection.panel title="@Model.PanelTitle" class="@Model.PanelClass">
     @foreach (var tile in @Model.TileData)
@@ -15,7 +8,7 @@
         <uicollection.tile title="@tile.TileTitle" image-source="@tile.TileImageSource" image-caption="@tile.TileImageCaption"/>
     }
 
-</uicollection.panel>*@
+</uicollection.panel>
 
 
 
