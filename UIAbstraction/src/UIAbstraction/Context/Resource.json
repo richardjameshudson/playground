@@ -3,9 +3,10 @@
     "Page": "",
     "Component": "",
     "ComponentResources": {
+      "LayoutTemplate": "",
       "savebutton": "Save me, if you you can find me!",
       "closebutton": "\"don't bother!\".",
-      "ModalTitlePrefix" :  "WARNING"
+      "ModalTitlePrefix": "WARNING"
     }
   },
   {

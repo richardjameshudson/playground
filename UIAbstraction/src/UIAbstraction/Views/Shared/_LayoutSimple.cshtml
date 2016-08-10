@@ -31,11 +31,6 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Overview">View/Change Policy</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Documents">Insurance Documents</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Payments">View/Change Payments</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="ChangePassword">Change Password</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="ChangeEmail">Change Email Address</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Logout">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -43,10 +38,7 @@
     <div class="container body-content">
         <hr />
         <div class="row">
-            <div class="col-md-3">
-                <UICollection.Panel title="Quick Links" class="panel-danger" />
-            </div>
-            <div class="col-md-9">
+            <div class="col-md-12">
                 @RenderBody()
             </div>
         </div>
