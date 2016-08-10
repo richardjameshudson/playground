@@ -5,19 +5,20 @@ using System.Threading.Tasks;
 using UIAbstraction.Data.Policy;
 using UIAbstraction.UI.Components.Models;
 
-namespace UIAbstraction.Data
+namespace UIAbstraction.Data.UIInterfaces
 {
     public class PanelWithTilesModelFactory : IPanelWithTilesModelFactory
     {
         public PanelWithTilesModel GetModel(string dataSource)
         {
-            if (dataSource.Contains("KeyFacts"))
+            switch (dataSource.ToUpper())
             {
-                return new KeyFactsPanelWithTiles().GetModel();
-            }
-            else
-            {
-                return null;
+                case "DATA.POLICY.KEYFACTS":
+                    return new KeyFacts().GetModel();
+                case "DATA.POLICY.MAKEACHANGE":
+                    return new MakeAChange().GetModel();
+                default:
+                    return null;
             }
         }
     }

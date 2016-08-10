@@ -1,0 +1,21 @@
+﻿
+
+{
+  "Resources": [
+    {
+      "Component": "Data.Policy.KeyFacts",
+      "Dicationary": [
+        { "Panel-Title": "KeyFacts" },
+        { "Panel-Class": "panel-info" }
+      ]
+    },
+    {
+      "Component": "Data.Policy.MakeAChange",
+      "Dicationary": [
+        { "Panel-Title": "Make a serious change to your outlook sunshine!" },
+        { "Panel-Class": "panel-danger" }
+      ]
+    }
+  ]
+}
+

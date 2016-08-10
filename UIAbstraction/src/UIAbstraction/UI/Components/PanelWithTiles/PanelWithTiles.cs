@@ -16,10 +16,7 @@ namespace UIAbstraction.UI.Components
         public PanelWithTiles(){}
 
         public async Task<IViewComponentResult> InvokeAsync(PanelWithTilesModel model)
-        {
-            //var model = await Task.Run(()=>modelFactory.GetModel());
-            
-            return View("~/UI/Components/PanelWithTiles/Views/default.cshtml", model);
+        {   return await Task.Run(()=>View("~/UI/Components/PanelWithTiles/Views/default.cshtml", model));
         }
     }
 }

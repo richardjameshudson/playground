@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using UIAbstraction.UI.Components.Models;
 
-namespace UIAbstraction.Data
+namespace UIAbstraction.Data.UIInterfaces
 {
     public interface IPanelWithTilesModelFactory
     {

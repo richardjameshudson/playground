@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using UIAbstraction.Context;
 using UIAbstraction.Data;
+using UIAbstraction.Data.UIInterfaces;
 
 namespace UIAbstraction
 {
@@ -30,6 +32,7 @@ namespace UIAbstraction
         {
 
             services.AddTransient<IPanelWithTilesModelFactory, PanelWithTilesModelFactory>();
+            services.AddSingleton<IResource, JsonResourceProvider>();
             // Add framework services.
             services.AddMvc();
         }

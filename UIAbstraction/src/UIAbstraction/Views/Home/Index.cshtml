@@ -1,37 +1,24 @@
 ﻿@using System.ComponentModel
 @using UIAbstraction.Data.Policy
 @using UIAbstraction.UI.Components
+
+
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Insure Me";
 }
 
-
+<hr/>
 
 <div class="row">
-    Panel should appear below.
-    <hr/>
-
-
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts"/>
-    <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts" />
-
-    
-    <hr/>
-    Panel should appear above. 
-
-
+    <UICollection.Panel title="Notifications" class="panel-primary">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-11">This is a notification area</div>
+        </div>
+    </UICollection.Panel>
+    <UICollection.Panel title="Policy Detail" class="panel-primary">
+        <UIComponents.PanelWithTiles model-source="Data.Policy.MakeAChange" title="Make a change" class="panel-primary" />
+        <UIComponents.PanelWithTiles model-source="Data.Policy.KeyFacts" title="KeyFacts" class="panel-primary" />
+    </UICollection.Panel>
+      
 </div>

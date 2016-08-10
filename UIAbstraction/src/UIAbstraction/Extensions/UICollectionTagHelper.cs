@@ -32,7 +32,7 @@ namespace UIAbstraction.Extensions
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
-            _htmlContent = GetUICollectionHtml();
+            _htmlContent = await Task.Run(()=>GetUICollectionHtml());
             output.TagName = null;
             if (IsContentEmpty())
             {
@@ -43,7 +43,6 @@ namespace UIAbstraction.Extensions
                 output.PreContent.SetHtmlContent(_htmlContent[0]);
                 output.PostContent.SetHtmlContent(_htmlContent[1]);
             }
-            
         }
 
 
