@@ -1,21 +1,25 @@
-﻿
-
-{
-  "Resources": [
-    {
-      "Component": "Data.Policy.KeyFacts",
-      "Dicationary": [
-        { "Panel-Title": "KeyFacts" },
-        { "Panel-Class": "panel-info" }
-      ]
-    },
-    {
-      "Component": "Data.Policy.MakeAChange",
-      "Dicationary": [
-        { "Panel-Title": "Make a serious change to your outlook sunshine!" },
-        { "Panel-Class": "panel-danger" }
-      ]
+﻿[
+  {
+    "Page": "",
+    "Component": "",
+    "ComponentResources": {
+      "savebutton": "Save me, if you you can find me!",
+      "closebutton": "\"don't bother!\".",
+      "ModalTitlePrefix" :  "WARNING"
     }
-  ]
-}
-
+  },
+  {
+    "Page": "",
+    "Component": "KeyFacts",
+    "ComponentResources": {
+      "Title": "Key facts about your policy"
+    }
+  },
+  {
+    "Page": "",
+    "Component": "MakeAChange",
+    "ComponentResources": {
+      "Title": "Change to your policy"
+    }
+  }
+]

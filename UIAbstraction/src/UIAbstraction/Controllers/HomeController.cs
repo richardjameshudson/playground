@@ -8,12 +8,40 @@ namespace UIAbstraction.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Overview()
         {
             return View();
         }
 
-       
+        public IActionResult Documents()
+        {
+            return View();
+        }
+
+        public IActionResult Payments()
+        {
+            return View();
+        }
+
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        public IActionResult ChangeEmail()
+        {
+            return View();
+        }
+
+        public IActionResult Logout()
+        {
+            return View();
+        }
+
+
+
+
+            
         public IActionResult Error()
         {
             return View();

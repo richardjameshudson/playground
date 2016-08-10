@@ -8,6 +8,7 @@ namespace UIAbstraction.Context
     
     public class Resource
     {
+        public string Page { get; set; }
         public string Component { get; set; }
         public Dictionary<string, string> ComponentResources { get; set; }
     }

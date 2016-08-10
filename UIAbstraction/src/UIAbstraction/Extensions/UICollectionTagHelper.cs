@@ -32,8 +32,7 @@ namespace UIAbstraction.Extensions
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
-            _htmlContent = await Task.Run(()=>GetUICollectionHtml());
-            output.TagName = null;
+            _htmlContent = await Task.Run(()=>GetUICollectionHtml(output.Attributes));
             if (IsContentEmpty())
             {
                 output.Content.SetHtmlContent(_htmlContent[0]);
@@ -43,12 +42,25 @@ namespace UIAbstraction.Extensions
                 output.PreContent.SetHtmlContent(_htmlContent[0]);
                 output.PostContent.SetHtmlContent(_htmlContent[1]);
             }
+            output.TagName = null;
         }
 
 
-        private string[] GetUICollectionHtml()
+        private string[] GetUICollectionHtml(TagHelperAttributeList attributes)
         {
-            var htmlContent = System.IO.File.ReadAllText("ui/collections/" +_collectionName + ".html");
+            var htmlContent = System.IO.File.ReadAllText("ui/collections/" + _collectionName + ".html");
+            if (attributes.Any() && !string.IsNullOrEmpty(htmlContent)) 
+            {
+                var attr = string.Empty;
+                foreach (var item in attributes)
+                {
+                    attr += item.Name + "=\"" + item.Value + "\" ";
+                }
+
+                var ind = htmlContent.IndexOf('>');
+                htmlContent = htmlContent.Substring(0, ind) + " " + attr + htmlContent.Substring(ind);
+            }
+            
             if (ReplacementValues != null)
             {
                 foreach (var item in ReplacementValues)

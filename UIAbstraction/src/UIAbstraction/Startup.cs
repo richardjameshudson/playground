@@ -32,7 +32,7 @@ namespace UIAbstraction
         {
 
             services.AddTransient<IPanelWithTilesModelFactory, PanelWithTilesModelFactory>();
-            services.AddSingleton<IResource, JsonResourceProvider>();
+            services.AddScoped<IResource, JsonResourceProvider>();
             // Add framework services.
             services.AddMvc();
         }
@@ -59,7 +59,7 @@ namespace UIAbstraction
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Overview}/{id?}");
             });
         }
     }

@@ -8,6 +8,8 @@ namespace UIAbstraction.Context
 {
     public interface IResource
     {
-        IEnumerable<Resource> GetResources(string componentName);
+        Dictionary<string, string> GetResources(string Page, string componentName);
+        string GetResource(string page, string componentName, string key);
+
     }
 }
