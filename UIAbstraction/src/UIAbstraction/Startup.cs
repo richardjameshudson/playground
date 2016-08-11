@@ -34,7 +34,8 @@ namespace UIAbstraction
             services.AddTransient<IPanelWithTilesModelFactory, PanelWithTilesModelFactory>();
             services.AddScoped<IResource, JsonResourceProvider>();
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc()
+                .AddRazorOptions(options => options.ViewLocationExpanders.Add(new Extensions.BrandViewLocationExpander()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
