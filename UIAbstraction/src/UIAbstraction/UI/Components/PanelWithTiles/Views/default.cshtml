@@ -8,7 +8,7 @@
     {
         <uicollection.tile title="@tile.TileTitle" image-source="@tile.TileImageSource" image-caption="@tile.TileImageCaption" data-toggle="modal" data-target="#modal_@tile.TileTitle.Replace(" ", "")"/>
         <UICollection.Modal  title="@resource.GetResource("","","ModalTitlePrefix") @tile.TileTitle" closebutton="@resource.GetResource("", "", "closebutton")" savebutton="@resource.GetResource("", "", "savebutton")" id="modal_@tile.TileTitle.Replace(" ", "")">
-            <img src="@tile.TileImageSource.Replace("100", "500")" />
+            @tile.TileTitle
         </UICollection.Modal>
     }
 

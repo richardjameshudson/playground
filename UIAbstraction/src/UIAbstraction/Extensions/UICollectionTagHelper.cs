@@ -48,7 +48,7 @@ namespace UIAbstraction.Extensions
 
         private string[] GetUICollectionHtml(TagHelperAttributeList attributes)
         {
-            var htmlContent = System.IO.File.ReadAllText("ui/collections/" + _collectionName + ".html");
+            var htmlContent = System.IO.File.ReadAllText("ui/collections/" + _collectionName + "/" + _collectionName + ".html");
             if (attributes.Any() && !string.IsNullOrEmpty(htmlContent)) 
             {
                 var attr = string.Empty;

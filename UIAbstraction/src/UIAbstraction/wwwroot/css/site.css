@@ -10,12 +10,14 @@
     padding-right: 15px;
 }
 
+
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input,
 select,
 textarea {
     max-width: 280px;
 }
+
 
 /* Carousel */
 .carousel-caption p {
@@ -36,28 +38,3 @@ textarea {
     display: none
   }
 }
-
-
-/* added here for ease*/
-
-            .tile-container {
-              position: relative;
-              display:block;
-              float:left;
-              text-align: center;
-              padding:20px;
-                width: 150px;
-              border:2px solid #ccc;
-              margin:5px;
-              overflow: hidden;
-            }
-            .tile-header{
-                margin:0 0 20px 0;
-                padding:0;
-            }
-            .tile-img figure {
-                margin:0;
-            }
-            .tile-img figcaption {
-                display:none;
-            }
